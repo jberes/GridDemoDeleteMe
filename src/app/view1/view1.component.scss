@@ -13,13 +13,15 @@
   flex-basis: 0;
 }
 .h5 {
-  margin: 0 0 16px;
   min-width: min-content;
+  margin: 0 0 16px;
   height: max-content;
 }
-.text {
-  min-width: min-content;
-  height: max-content;
+.grid {
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
 }
 .column-layout {
   display: flex;
