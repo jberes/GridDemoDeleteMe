@@ -4,10 +4,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { View1Component } from './view1/view1.component';
-import { View2Component } from './view2/view2.component';
-import { IgxGridModule, IgxNavbarModule, IgxButtonModule, IgxRippleModule, IgxToggleModule, IgxIconModule, IgxNavigationDrawerModule } from 'igniteui-angular';
+import { IgxGridModule, IgxComboModule, IgxNavbarModule, IgxButtonModule, IgxRippleModule, IgxToggleModule, IgxIconModule, IgxNavigationDrawerModule } from 'igniteui-angular';
 import { FormsModule } from '@angular/forms';
+import { View2Component } from './view2/view2.component';
 import { View3Component } from './view3/view3.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,12 +24,14 @@ import { View3Component } from './view3/view3.component';
     BrowserAnimationsModule,
     IgxGridModule,
     FormsModule,
+    IgxComboModule,
     IgxNavbarModule,
     IgxButtonModule,
     IgxRippleModule,
     IgxToggleModule,
     IgxIconModule,
-    IgxNavigationDrawerModule
+    IgxNavigationDrawerModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
