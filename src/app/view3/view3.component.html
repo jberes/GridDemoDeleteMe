@@ -1,0 +1,35 @@
+<div class="group column-layout">
+  <igx-combo type="border" [data]="travelAppArticlesSource1" valueKey="title" displayKey="title" [filterable]="true" [autoFocusSearch]="true" class="combo"></igx-combo>
+</div>
+<div class="group_1 column-layout">
+  <igx-grid [data]="northwindOrders" primaryKey="employeeID" displayDensity="cosy" class="grid">
+    <igx-column header="orderID" field="orderID" dataType="number" [sortable]="true" title="orderID"></igx-column>
+    <igx-column header="customerID" field="customerID" dataType="string" [sortable]="true" title="customerID"></igx-column>
+    <igx-column header="employeeID" field="employeeID" dataType="number" [sortable]="true" title="employeeID"></igx-column>
+    <igx-column header="orderDate" field="orderDate" dataType="date" [sortable]="true" title="orderDate"></igx-column>
+    <igx-column header="requiredDate" field="requiredDate" dataType="date" [sortable]="true" title="requiredDate"></igx-column>
+    <igx-column header="shippedDate" field="shippedDate" dataType="date" [sortable]="true" title="shippedDate"></igx-column>
+    <igx-column header="shipVia" field="shipVia" dataType="number" [sortable]="true" title="shipVia"></igx-column>
+    <igx-column header="freight" field="freight" dataType="number" [sortable]="true" title="freight"></igx-column>
+    <igx-column header="shipName" field="shipName" dataType="string" [sortable]="true" title="shipName"></igx-column>
+    <igx-column header="street" field="shipAddress.street" dataType="string" [sortable]="true" title="shipAddress.street"></igx-column>
+    <igx-column header="city" field="shipAddress.city" dataType="string" [sortable]="true" title="shipAddress.city"></igx-column>
+    <igx-column header="region" field="shipAddress.region" dataType="string" [sortable]="true" title="shipAddress.region"></igx-column>
+    <igx-column header="postalCode" field="shipAddress.postalCode" dataType="string" [sortable]="true" title="shipAddress.postalCode"></igx-column>
+    <igx-column header="country" field="shipAddress.country" dataType="string" [sortable]="true" title="shipAddress.country"></igx-column>
+  </igx-grid>
+</div>
+<div class="group_1 column-layout">
+  <igx-grid [data]="northwindCustomers" primaryKey="customerID" displayDensity="cosy" class="grid">
+    <igx-column header="customerID" field="customerID" dataType="string" [sortable]="true" title="customerID"></igx-column>
+    <igx-column header="companyName" field="companyName" dataType="string" [sortable]="true" title="companyName"></igx-column>
+    <igx-column header="contactName" field="contactName" dataType="string" [sortable]="true" title="contactName"></igx-column>
+    <igx-column header="contactTitle" field="contactTitle" dataType="string" [sortable]="true" title="contactTitle"></igx-column>
+    <igx-column header="street" field="address.street" dataType="string" [sortable]="true" title="address.street"></igx-column>
+    <igx-column header="city" field="address.city" dataType="string" [sortable]="true" title="address.city"></igx-column>
+    <igx-column header="region" field="address.region" dataType="string" [sortable]="true" title="address.region"></igx-column>
+    <igx-column header="postalCode" field="address.postalCode" dataType="string" [sortable]="true" title="address.postalCode"></igx-column>
+    <igx-column header="country" field="address.country" dataType="string" [sortable]="true" title="address.country"></igx-column>
+    <igx-column header="phone" field="address.phone" dataType="string" [sortable]="true" title="address.phone"></igx-column>
+  </igx-grid>
+</div>
