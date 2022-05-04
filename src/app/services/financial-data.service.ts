@@ -9,6 +9,6 @@ export class FinancialDataService {
   constructor(private http: HttpClient) { }
 
   public getFinTable(): Observable<any> {
-    return this.http.get(`https://excel2json.io/api/share/1d8045fe-ac94-4d35-43f4-08da142f80b1`);
+    return this.http.get(`https://excel2json.io/api/share/ce22eedde5a9404288ce38024ce198b9`);
   }
 }
